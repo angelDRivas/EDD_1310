@@ -2,21 +2,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package arreglo;
+package biseccion;
 
-
-
+import biseccion.interfaz.VentanaBiseccion;
+import java.util.Scanner;
+import org.nfunk.jep.JEP;
 /**
  *
  * @author angel
  */
-public class Arreglo {
-     int tamaño;
-     int longitud;
-     int elemento;
 
+
+public class Biseccion {
     
-   
+    
+
+    public Biseccion() {
+    }
+    
+    
     
 
     /**
@@ -25,11 +29,12 @@ public class Arreglo {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Arreglo[] arr = new Arreglo[]{
+        VentanaBiseccion vi = new VentanaBiseccion();
+        vi.setVisible(true);
+        vi.setSize(1100,600);
         
-        };
+        
+        
     }
-
-    
     
 }
