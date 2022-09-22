@@ -25,20 +25,20 @@ public class Proceso {
         this.x = Double.NaN;
         this.Iterador = 0;
         
-        double evaA = this.FX.evaluar(x1);
+        double evaX1 = this.FX.evaluar(x1);
         
-        if (!Double.isNaN(evaA)) {
-            double evaB = this.FX.evaluar(x2);
+        if (!Double.isNaN(evaX1)) {
+            double evaX2 = this.FX.evaluar(x2);
             
-            if(evaA * evaB < 0){
+            if(evaX1 * evaX2 < 0){
                 
                 do {    
                     this.x = (x1+x2) / 2;
                     this.Iterador++;
-                    evaA = this.FX.evaluar(x1);
-                    evaB = this.FX.evaluar(x2);
+                    evaX1 = this.FX.evaluar(x1);
+                    evaX2 = this.FX.evaluar(x2);
                     
-                    if(evaA * this.FX.evaluar(x) < 0){
+                    if(evaX1 * this.FX.evaluar(x) < 0){
                         x2 = this.x;
                     }else{
                         x1 = this.x;
